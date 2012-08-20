@@ -27,4 +27,4 @@ promise
   });
 ```
 
-Checkout the complete documentation [here](https://github.com/hemanshubhojak/PromiseJS/wiki/Contents).
+Checkout the complete documentation [here](https://github.com/hemanshubhojak/PromiseJS/wiki).
