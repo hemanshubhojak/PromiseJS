@@ -25,3 +25,6 @@ promise
   .fail(function(){
     alert("Failed");
   });
+```
+
+Checkout the complete documentation [here](https://github.com/hemanshubhojak/PromiseJS/wiki/Contents).
