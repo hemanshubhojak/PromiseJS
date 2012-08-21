@@ -31,7 +31,7 @@ promise
 ```javascript
 var promise = PromiseJS.when(promise1, promise2, promise3, promise4); //  You can also pass an array of promises here
 
-promise.then(function(promises){
+promise.then(function(promises){  //  An array of completed promises are passed as argument to the callback
   promises.forEach(function(p){
     if( promise.isResolved() ){
       alert( p.value() ); //  value() returns the result or error attached with the promise
@@ -44,7 +44,7 @@ promise.then(function(promises){
 ```javascript
 var promise = PromiseJS.chain(func1, func2, func3, func4);  //  You can also pass an array of functions here
 
-promise.then(function(promises){
+promise.then(function(promises){  //  An array of completed promises are passed as argument to the callback
   promises.forEach(function(p){
     if( promise.isResolved() ){
       alert( p.value() ); //  value() returns the result or error attached with the promise
