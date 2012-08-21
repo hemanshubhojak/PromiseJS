@@ -158,5 +158,10 @@
         when: when,
         chain: chain
     };
+    
+    //  For CommonJS environments
+    if( typeof exports !== "undefined" ){
+        exports.PromiseJS = global.PromiseJS;
+    }
 
 }(this));
