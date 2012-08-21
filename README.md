@@ -27,9 +27,9 @@ promise
   });
 ```
 
-**Use `when` to join a list of promises and get notified when all of them complete**
+**Use `when(funcs)` to join a list of promises and get notified when all of them complete**
 ```javascript
-var promise = PromiseJS.when(promise1, promise2, promise3, promise4);
+var promise = PromiseJS.when(promise1, promise2, promise3, promise4); //  You can also pass an array of promises here
 
 promise.then(function(promises){
   promises.forEach(function(p){
@@ -40,9 +40,9 @@ promise.then(function(promises){
 })
 ```
 
-**Use chain to call a list of deferred functions sequentially**
+**Use 'chain(funcs)' to call a list of deferred functions sequentially**
 ```javascript
-var promise = PromiseJS.chain(func1, func2, func3, func4);
+var promise = PromiseJS.chain(func1, func2, func3, func4);  //  You can also pass an array of functions here
 
 promise.then(function(promises){
   promises.forEach(function(p){
