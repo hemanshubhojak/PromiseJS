@@ -40,7 +40,7 @@ promise.then(function(promises){
 })
 ```
 
-**Use 'chain(funcs)' to call a list of deferred functions sequentially**
+**Use `chain(funcs)` to call a list of deferred functions sequentially**
 ```javascript
 var promise = PromiseJS.chain(func1, func2, func3, func4);  //  You can also pass an array of functions here
 
