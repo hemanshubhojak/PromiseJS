@@ -1,7 +1,8 @@
 PromiseJS
 =========
 
-PromiseJS is a JavaScript framework which helps you subscribe to an async operation which can notify you upon its completion.
+PromiseJS is a standalone JavaScript framework which helps you subscribe to an async operation which can notify you upon its completion.
+It works on the web as well as any CommonJS environments. It has no dependencies on any other frameworks.
 
 **A simple example**
 
