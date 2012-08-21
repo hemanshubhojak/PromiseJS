@@ -27,4 +27,32 @@ promise
   });
 ```
 
+**Use `when` to join a list of promises and get notified when all of them complete**
+```javascript
+var promise = PromiseJS.when(promise1, promise2, promise3, promise4);
+
+promise.then(function(promises){
+  promises.forEach(function(p){
+    if( promise.isResolved() ){
+      alert( p.value() ); //  value() returns the result or error attached with the promise
+    }
+  });
+})
+```
+
+**Use chain to call a list of deferred functions sequentially**
+```javascript
+var promise = PromiseJS.chain(func1, func2, func3, func4);
+
+promise.then(function(promises){
+  promises.forEach(function(p){
+    if( promise.isResolved() ){
+      alert( p.value() ); //  value() returns the result or error attached with the promise
+    }
+  });
+});
+```
+
+**Use `isPending()`, `isResolved()` and `isRejected()` on a promise to check the status**
+
 Checkout the complete documentation [here](https://github.com/hemanshubhojak/PromiseJS/wiki).
