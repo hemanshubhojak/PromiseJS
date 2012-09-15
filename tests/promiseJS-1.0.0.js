@@ -6,6 +6,9 @@
         Rejected: "Rejected"
     };
 
+    /**
+    * @constructor
+    */
     function Deferred() {
         var self = this,
             successCallbacks = [],
@@ -14,6 +17,9 @@
             state = states.Pending,
             value;
 
+        /**
+        * @constructor
+        */
         function Promise() {
             var self = this;
 
@@ -164,4 +170,4 @@
         exports.PromiseJS = global.PromiseJS;
     }
 
-}(this));
+}((function () { return this; }.call())));
